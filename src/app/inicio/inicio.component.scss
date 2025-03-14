@@ -30,7 +30,7 @@
 }
 
 .col-md-6 {
-  max-height: 100%; /* Evita que la columna crezca más allá del tamaño de la imagen */
+  height: auto;
 
   overflow: hidden; /* Esconde cualquier contenido que sobrepase el tamaño del contenedor */
 }
