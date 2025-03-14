@@ -28,13 +28,13 @@ export class InicioComponent {
   }
 
   Cursos = [
-    { id: 1, name: 'Canto', image: '/canto.jpeg' },
-    { id: 2, name: 'Bateria', image: '/bateria.jpg' },
-    { id: 3, name: 'Piano', description: 'Frappe muy bueno.', price: 90, image: '/piano.jpg' },
-    { id: 4, name: 'Guitarra',  image: '/guitarra.jpg' },
-    { id: 5, name: 'Violin',  image: '/violin.jpg' },
-    { id: 6, name: 'Acordeon',  price: 80, image: '/acordeon.jpg' },
-    { id: 7, name: 'Teclado', image: '/teclado.jpeg' },
+    { id: 1, name: 'Canto', image: '/academiaJonico/canto.jpeg' },
+    { id: 2, name: 'Bateria', image: '/academiaJonico/bateria.jpg' },
+    { id: 3, name: 'Piano',  image: '/academiaJonico/piano.jpg' },
+    { id: 4, name: 'Guitarra',  image: '/academiaJonico/guitarra.jpg' },
+    { id: 5, name: 'Violin',  image: '/academiaJonico/violin.jpg' },
+    { id: 6, name: 'Acordeon',  price: 80, image: '/academiaJonico/acordeon.jpg' },
+    { id: 7, name: 'Teclado', image: '/academiaJonico/teclado.jpeg' },
 
   ];
 }
