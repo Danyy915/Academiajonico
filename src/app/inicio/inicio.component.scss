@@ -28,6 +28,12 @@
 .row-full-height {
   height: 100vh;
 }
+
+.col-md-6 {
+  max-height: 100%; /* Evita que la columna crezca más allá del tamaño de la imagen */
+
+  overflow: hidden; /* Esconde cualquier contenido que sobrepase el tamaño del contenedor */
+}
 .banner {
   height: 90vh;
   width: 100%;
