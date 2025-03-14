@@ -1,0 +1,198 @@
+header{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 0%;
+  transition: 1s;
+  color: black;
+  height: 10vh;
+  z-index: 1000;
+  position: fixed;
+  transition: 1s;
+
+}
+
+.spacer{
+  height: 10vh;
+}
+
+
+header.sticky{
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  height: 8vh;
+
+  text-shadow: none;
+
+}
+
+.menu-icon {
+  display: none; /* Oculta el ícono en pantallas grandes */
+}
+
+
+
+header .link {
+  text-decoration: none; /* Quita el subrayado por defecto */
+  position: relative; /* Necesario para el pseudo-elemento */
+  color: black; /* Color del texto */
+}
+
+header .link::after {
+  content: ""; /* Crea el subrayado */
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Controla la distancia del subrayado */
+  width: 100%;
+  height: 2px; /* Grosor de la línea */
+  background-color: black; /* Color del subrayado */
+  transform: scaleX(0); /* Oculta la línea por defecto */
+  transition: transform 0.3s ease-in-out;
+}
+
+header .link:hover::after {
+  transform: scaleX(1); /* Muestra la línea en hover */
+}
+
+nav .link{
+margin-right: 10%;
+
+  font-size: 2.5vh;
+  font-weight: 400;
+}
+nav i{
+  margin-right: 3%;
+  color: black;
+}
+
+nav i:hover{
+  transform: scale(1.1);
+  color: rgba(0, 0, 0, 0.563);
+}
+
+.logo {
+
+  margin-left: 5%;
+  width: 50%;
+}
+nav{
+  margin-left: 5%;
+  margin-right: 0%;
+  width: 50%;
+}
+
+button{
+  border-color: rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 2vh;
+  align-self: center;
+  align-content: center;
+  width: 25%;
+  transition: 0.5s;
+  margin-right: 3vh;
+}
+
+button:hover{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: transparent;  /* Fondo blanco */
+  color: #333;  /* Color del texto */
+  text-align: center;  /* Centra el texto */
+  padding: 20px 0;  /* Espaciado superior e inferior */
+  width: 100%;  /* Abarca el 100% del ancho */
+  position: relative;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+  margin-top: auto;  /* Empuja el footer hacia abajo */
+  font-size: 120%;
+  height: 8vh;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+  /* Asegura que el icono se muestre solo en móviles */
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 10%;
+  }
+
+  /* Ajusta el menú para que se posicione a la derecha */
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;  /* Alinea los elementos a la derecha */
+    position: absolute;
+    top: 6vh;
+    right: -7vh;              /* Posición a la derecha */
+    width: 200px;          /* Ancho fijo para un layout uniforme */
+    background-color: white;
+    text-align: center;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
+
+    padding: 10px;
+
+    border-radius: 0 0 0 10px; /* Opcional: para un borde redondeado */
+  }
+
+  /* Muestra el menú cuando esté activo */
+  nav.active {
+    display: flex;
+  }
+
+  /* Espaciado uniforme entre los elementos del menú */
+  nav a,
+  nav button,
+  nav i {
+    margin: 10px 0;
+
+}
+nav a{
+  margin-right: 0%;
+}
+
+nav button{
+  width: 75%;
+}
+}
+
+@media(max-width: 700px)  {
+.spacer{
+  height: 5vh;
+}
+
+
+header{
+  height: auto ;
+}
+}
+@media(max-width: 600px)  {
+  .spacer{
+    height: 2vh;
+  }
+
+  nav{
+    right: 0%;
+  }
+
+  }
+
+  @media(max-height: 1400px)  {
+
+    nav{
+      right: 0%;
+    }
+
+    }

@@ -1,0 +1,127 @@
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+.icono{
+  color: black;
+  margin-right: 2vh;
+}
+.icono:hover{
+  color: rgba(0, 0, 0, 0.614);
+  transform: scale(1.1);
+}
+.eleccion {
+  padding: 70px 7%;
+  text-align: justify;
+}
+
+.img-custom {
+  max-width: 100%;
+  height: 100%;
+}
+.row-full-height {
+  height: 100vh;
+}
+.banner {
+  height: 90vh;
+  width: 100%;
+  margin: 0 auto; /* Centra el banner horizontalmente */
+  background: url('/banner.png') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+  transition: background-image 1.5s ease-in-out;
+
+  /* Evita que el contenido del banner se deforme en pantallas pequeñas */
+  min-height: 300px; /* Establece un mínimo */
+}
+
+.spacer{
+  margin-top: 10vh; margin-left: 50px; margin-right: 50px; text-align: start;
+}
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 45vh; /* Ajusta la altura según lo que necesites */
+  object-fit: cover;
+  display: block;
+  transition: transform 1s ease, filter 0.3s ease;
+}
+
+.card-img-top:hover{
+  transform: scale(1.1); /* Aplica zoom solo a la imagen */
+    filter: brightness(0.6); /* Oscurece la imagen */
+}
+
+
+
+
+
+.card-title {
+  position: absolute;
+  bottom: 10px; /* Ajusta la posición vertical del título */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el texto horizontalmente */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 90%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+
+@media (max-width: 1024px) {
+  .banner {
+    height: 40vh; /* Reduce la altura en pantallas pequeñas */
+    background-size: contain; /* Cambia a 'contain' para evitar cortes */
+  }
+  .card-img-top{
+    height: 20vh;
+  }
+
+  .spacer{
+    margin-top: 2vh;
+  }
+
+
+
+}
+@media (max-width: 780px) {
+  .banner {
+    height: 60vh; /* Más pequeño en móviles */
+    padding: 20px; /* Agrega un poco de padding para evitar que el texto toque los bordes */
+  }
+
+  .card-img-top{
+    height: 25vh;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+  .banner {
+    height: 30vh; /* Más pequeño en móviles */
+    padding: 20px; /* Agrega un poco de padding para evitar que el texto toque los bordes */
+  }
+
+  .card-img-top{
+    height: 25vh;
+  }
+
+}

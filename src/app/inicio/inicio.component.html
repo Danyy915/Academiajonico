@@ -1,0 +1,134 @@
+
+<div id="inicio" class="banner">
+</div>
+
+
+<div id="nosotros" class="eleccion">
+  <h1 style="text-align: center;">¿Quiénes Somos?</h1><br>
+  <p>
+    En nuestra Academia de Música en Mazatlán, Sinaloa, combinamos la pasión por la música con una enseñanza de calidad. Ofrecemos un ambiente inspirador donde cada estudiante puede descubrir y perfeccionar su talento, utilizando métodos tanto tradicionales como innovadores. Nuestro objetivo es formar artistas completos, brindando las herramientas necesarias para expresar y compartir su arte.
+    </p>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 text-center align-content-center">
+      <h1 style="text-align: center;">¿Por qué Nosotros?</h1><br>
+      <p style="text-align: justify;">
+        En nuestra academia reinventamos la forma de aprender música, ofreciendo clases teóricas y prácticas en diversas disciplinas: desde interpretación clásica hasta géneros modernos. Nuestro equipo de profesionales te guiará en un proceso personalizado, adaptado a tus necesidades y aspiraciones artísticas.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img  src="imagen1.jpg"  alt="Academia de Música" class="img-custom">
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+
+<div class="container-fluid text-center" style="display: flex; justify-content: center;">
+  <div class="row" style="max-width: 80%;">
+    <div class="col-md-6">
+      <h1>
+        <i class="bi bi-music-note-list"></i> Misión
+      </h1>
+      <p style="text-align: justify;">
+        Nuestra misión es formar músicos apasionados y talentosos, proporcionándoles las herramientas técnicas y artísticas necesarias para expresarse con libertad. Buscamos inspirar a cada estudiante a alcanzar su máximo potencial y a enriquecer la escena cultural de Mazatlán.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h1>
+        <i class="bi bi-eye"></i> Visión
+      </h1>
+      <p style="text-align: justify;">
+        Aspiramos a ser la academia de música líder en Sinaloa, reconocida por la calidad de nuestra enseñanza y nuestro compromiso con la innovación. Queremos crear una comunidad vibrante y conectada a través del poder transformador de la música.
+      </p>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container-fluid">
+  <div class="row row-full-height align-items-center">
+    <div class="col-md-6 text-center">
+      <h1>¡Transforma tu Pasión en Arte!</h1> <br>
+      <p style="text-align: justify;">
+        En <strong>Academia Musical Jonico</strong> nos especializamos en potenciar el talento y la creatividad. Ofrecemos cursos para todos los niveles, desde iniciación hasta programas avanzados en interpretación, composición, producción musical y más. Nuestro espacio está diseñado para inspirar y formar artistas completos en un ambiente profesional y colaborativo.
+      </p> <br>
+      <p><strong>¡Únete a nosotros y vive la experiencia de hacer música!</strong></p>
+    </div>
+    <div  class="col-md-6">
+      <img src="imagen2.jpg" class="img-custom" alt="Estudiantes en la Academia de Música">
+    </div>
+  </div>
+</div>
+<br>
+
+<div id="clases" class="spacer">
+  <h1  >Clases</h1>
+  <hr >
+
+</div>
+<div style="margin-left: 50px; margin-right: 50px;" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  @for (curso of Cursos; track $index) {
+    <div class="col">
+      <div class="card">
+        <img [src]="curso.image" class="card-img-top" alt="{{curso.name}}">
+          <h5 class="card-title">{{curso.name}}</h5>
+
+          <!-- Selector de cantidad -->
+      </div>
+    </div>
+    @if ($index % 2 == 1) {
+      <br>
+    }
+  }
+</div>
+
+
+<div class="container-fluid" style="background-color: rgb(246, 246, 246);">
+
+<div class="spacer">
+  <h1 id="contacto">Contacto</h1>
+  <hr>
+
+</div>
+<div class="container my-2">
+  <div class="row align-items-center">
+    <!-- Imagen a la izquierda -->
+    <div class="col-md-6">
+      <img style="border-radius: 5px;" src="contacto.jpg" alt="Imagen de contacto" class="img-fluid">
+    </div>
+    <!-- Formulario de contacto a la derecha -->
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <i class="bi bi-telephone fs-5"> 694 116 9525</i><br>
+          <i class="bi bi-geo-alt fs-5"> Mazatlán, Mexico, 82129</i>
+        </div>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <div class="mb-3">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5216941169525&text=Me%20Interesa%20mas%20Informacion%20%3A)"><i class="bi bi-whatsapp fs-3 icono"></i></a>
+          <a target="_blank" href="https://www.facebook.com/people/Academia-De-M%C3%BAsica-J%C3%B3nico/100063802641723/?ref=py_c"><i class="bi bi-facebook fs-3 icono"></i></a>
+
+        </div>
+
+        <button type="submit" class="btn btn-outline-dark">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
