@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
 export class InicioComponent {
   currentIndex = 0;
   backgrounds = [
-    'url("banner.png")',
-     'url("banner2.png")',
+    'url("banner.webp")',
+     'url("banner2.webp")',
     // Agrega más URLs de imágenes según sea necesario
   ];
 
